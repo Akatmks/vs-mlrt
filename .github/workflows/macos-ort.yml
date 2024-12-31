@@ -130,8 +130,8 @@ jobs:
         mkdir artifact
         cp -v install/lib/*.dylib artifact
 
-    - name: Describe
-      run: git describe --tags --long
+    # - name: Describe
+    #   run: git describe --tags --long
 
     - name: Upload
       uses: actions/upload-artifact@v4
